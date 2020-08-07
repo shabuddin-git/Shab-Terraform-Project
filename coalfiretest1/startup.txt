@@ -1,0 +1,10 @@
+#! /bin/bash
+yum install httpd
+service httpd on
+service status httpd
+service start httpd
+chkconfig httpd on
+service httpd start
+cd /var/www/html/
+echo "Hello from CoalFilre, please welcome" >> index.html
+cat index.html 
